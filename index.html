@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gracias❤️</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            color: white;
+        }
+
+        h1 {
+            margin-top: 20px;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .galeria img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .galeria img:hover {
+            transform: scale(1.1);
+        }
+
+        button {
+            padding: 15px 25px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            background-color: white;
+            color: #5c3237;
+            cursor: pointer;
+        }
+
+        #mensaje {
+            margin-top: 20px;
+            font-size: 22px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>❤️</h1>
+
+    <!-- 🎵 Música -->
+    <audio id="musica" loop>
+        <source src="Mon Laferte - Que Sí (Audio).mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- 📸 Galería -->
+    <div class="galeria">
+        <img src="FOTOS/foto1.jpeg">
+        <img src="FOTOS/WhatsApp Image 2026-04-14 at 10.55.41 AM (2).jpeg">
+        <img src="FOTOS/WhatsApp Image 2026-04-14 at 10.55.41 AM (3).jpeg">
+        <img src="FOTOS/WhatsApp Image 2026-04-14 at 10.55.41 AM.jpeg">
+        <img src="FOTOS/WhatsApp Image 2026-04-14 at 10.55.42 AM (1).jpeg">
+        <img src="FOTOS/WhatsApp Image 2026-04-14 at 10.55.42 AM (2).jpeg">
+        <img src="FOTOS/WhatsApp Image 2026-04-14 at 10.55.42 AM (3).jpeg">
+        <img src="FOTOS/WhatsApp Image 2026-04-14 at 10.55.42 AM.jpeg">
+    </div>
+
+    <!-- 💖 Botón -->
+    <button onclick="mostrarMensaje()">Haz clic aquí :3</button>
+
+    <!-- 💌 Mensaje -->
+    <p id="mensaje">
+    Cariño te amo demasiado y no me canso de decirlo<br>
+        Gracias por cada momento juntos cada risa cada noche<br>
+        Cada foto es un recuerdo que amo vivir contigo <br>
+        Eres lo mejor que me ha pasado<br><br>
+        Te amo muchísimo ❤️
+    </p>
+
+    <!-- ⚙️ Script -->
+    <script>
+        function mostrarMensaje() {
+            document.getElementById("mensaje").style.display = "block";
+            document.getElementById("musica").play();
+        }
+    </script>
+
+</body>
+</html>
